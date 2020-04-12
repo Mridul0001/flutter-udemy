@@ -5,8 +5,18 @@ almost everything in flutter is widget and there is widget for
 almost everything that you want to do in flutter*/
 void main() => runApp(
       MaterialApp(
-        home: Center( //center widget
-          child: Text("Welcome to flutter"),  //text widget
+        home: Scaffold(
+          backgroundColor: Colors.blueGrey,
+          appBar: AppBar(
+            title: Text("I am rich"),
+            backgroundColor: Colors.blueGrey[900],
+          ),
+          body: Center(
+            child: Image(
+              image: NetworkImage(
+                  'https://d1doqjmisr497k.cloudfront.net/-/media/mccormick-us/recipes/mccormick/t/800/two-toned-easter-eggs.jpg'),
+            ),
+          ),
         ),
       ),
     );
