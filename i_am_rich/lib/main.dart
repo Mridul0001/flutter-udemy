@@ -13,8 +13,7 @@ void main() => runApp(
           ),
           body: Center(
             child: Image(
-              image: NetworkImage(
-                  'https://d1doqjmisr497k.cloudfront.net/-/media/mccormick-us/recipes/mccormick/t/800/two-toned-easter-eggs.jpg'),
+              image: AssetImage('lib/images/diamond.png'),
             ),
           ),
         ),
